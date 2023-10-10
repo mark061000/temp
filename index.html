@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title> login</title>
+    </head>
+    <script>
+        function check(form){
+            if (form.uname.value=="mark" && form.pword.value == "1234"){
+                window.close('index.html')
+                window.open('home.html')
+            }
+            else {
+                alert("error, Username and Password doesn't match")
+            }
+        }
+        </script>
+        <body>
+            <h2>LOG IN</h2>
+            <form>
+                <label>Username</label>
+                <input type="text" name ="uname" placeholder="Username"><br>
+
+                <label>Password</label>
+                <input type="password" name ="pword" placeholder="Password"><br>
+
+                <button type="submit" onclick="check(this.form)"> Login </button>
+                <a href="signup.html" class="ca"> Create an account</a>
+            </form>
+        </body>
+ </html>
